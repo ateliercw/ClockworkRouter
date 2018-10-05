@@ -6,6 +6,7 @@ class BaseRouter: UIViewController, Router {
         typealias Container = BaseRouter
         case login
         case main
+        static let presentFrom: EmptyRouter.Target? =  nil
     }
 
     override func viewDidLoad() {
