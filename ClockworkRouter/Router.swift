@@ -10,12 +10,11 @@ public extension UIResponder {
                                            animated: Bool = true,
                                            completion: ((UIResponder) -> Void)? = nil) {
         if !performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion),
-            let destination = Target.presentFrom {
-            route(to: destination, animated: animated) { newResponder in
+            let presentFrom = Target.presentFrom {
+            route(to: presentFrom, animated: animated) { newResponder in
                 newResponder.route(to: destination, animated: animated, completion: completion)
             }
         }
-        _ = performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion)
     }
 
     private func performRoute<RouteHandler: Router>(using router: RouteHandler.Type,
