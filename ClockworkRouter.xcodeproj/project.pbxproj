@@ -21,18 +21,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		72BE50B821675C8B00B7AF85 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50B721675C8B00B7AF85 /* HomeRouter.swift */; };
+		72BE50BB216763C400B7AF85 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50BA216763C400B7AF85 /* MainRouter.swift */; };
+		72BE50BE2167645800B7AF85 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50BD2167645800B7AF85 /* SettingsRouter.swift */; };
+		72BE50C12167699900B7AF85 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50C02167699900B7AF85 /* BaseRouter.swift */; };
+		72BE50C421676C4A00B7AF85 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50C321676C4A00B7AF85 /* LoginRouter.swift */; };
+		72BE50C621676C8200B7AF85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50C521676C8200B7AF85 /* LoginViewController.swift */; };
+		72BE50C921676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50C821676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift */; };
+		72BE50CB2167762900B7AF85 /* UIButton+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50CA2167762900B7AF85 /* UIButton+Label.swift */; };
+		72BE50CD2167796200B7AF85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50CC2167796200B7AF85 /* SettingsViewController.swift */; };
+		72BE50D12167839700B7AF85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50B5216750A600B7AF85 /* Router.swift */; };
+		72BE50D2216783A200B7AF85 /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
+		72BE50D3216783A200B7AF85 /* ClockworkRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72CE15E221674CD800184F3B /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
 		72CE15E921674CD800184F3B /* ClockworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE15E821674CD800184F3B /* ClockworkRouterTests.swift */; };
 		72CE15EB21674CD800184F3B /* ClockworkRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CE15DB21674CD800184F3B /* ClockworkRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72CE15EE21674CD800184F3B /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
-		72CE15EF21674CD800184F3B /* ClockworkRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72F47914216746BF0083EDBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F47913216746BF0083EDBE /* AppDelegate.swift */; };
-		72F47916216746BF0083EDBE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F47915216746BF0083EDBE /* MainViewController.swift */; };
+		72F47916216746BF0083EDBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F47915216746BF0083EDBE /* HomeViewController.swift */; };
 		72F4791B216746C00083EDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F4791A216746C00083EDBE /* Assets.xcassets */; };
 		72F4791E216746C00083EDBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F4791C216746C00083EDBE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		72BE50D4216783A200B7AF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72F47908216746BF0083EDBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72CE15D821674CD800184F3B;
+			remoteInfo = ClockworkRouter;
+		};
 		72CE15E321674CD800184F3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72F47908216746BF0083EDBE /* Project object */;
@@ -46,13 +63,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 72F4790F216746BF0083EDBE;
 			remoteInfo = ClockworkRouterDemo;
-		};
-		72CE15EC21674CD800184F3B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72F47908216746BF0083EDBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72CE15D821674CD800184F3B;
-			remoteInfo = ClockworkRouter;
 		};
 		72CE15FC21674DB600184F3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,13 +88,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		72F47957216749880083EDBE /* Embed Frameworks */ = {
+		72BE50D6216783A300B7AF85 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				72CE15EF21674CD800184F3B /* ClockworkRouter.framework in Embed Frameworks */,
+				72BE50D3216783A200B7AF85 /* ClockworkRouter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +102,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		72BE50B5216750A600B7AF85 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		72BE50B721675C8B00B7AF85 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		72BE50BA216763C400B7AF85 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		72BE50BD2167645800B7AF85 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		72BE50C02167699900B7AF85 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		72BE50C321676C4A00B7AF85 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		72BE50C521676C8200B7AF85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		72BE50C821676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncapsulatingLayoutContainer.swift; sourceTree = "<group>"; };
+		72BE50CA2167762900B7AF85 /* UIButton+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Label.swift"; sourceTree = "<group>"; };
+		72BE50CC2167796200B7AF85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		72CE15D921674CD800184F3B /* ClockworkRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClockworkRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CE15DB21674CD800184F3B /* ClockworkRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockworkRouter.h; sourceTree = "<group>"; };
 		72CE15DC21674CD800184F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +120,7 @@
 		72CE15EA21674CD800184F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72F47910216746BF0083EDBE /* ClockworkRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockworkRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F47913216746BF0083EDBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72F47915216746BF0083EDBE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		72F47915216746BF0083EDBE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72F4791A216746C00083EDBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F4791D216746C00083EDBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F4791F216746C00083EDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,16 +146,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CE15EE21674CD800184F3B /* ClockworkRouter.framework in Frameworks */,
+				72BE50D2216783A200B7AF85 /* ClockworkRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72BE50B9216763B300B7AF85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50BA216763C400B7AF85 /* MainRouter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		72BE50BC2167644800B7AF85 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50BD2167645800B7AF85 /* SettingsRouter.swift */,
+				72BE50CC2167796200B7AF85 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		72BE50BF216768C500B7AF85 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50C02167699900B7AF85 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72BE50C221676C2A00B7AF85 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50C321676C4A00B7AF85 /* LoginRouter.swift */,
+				72BE50C521676C8200B7AF85 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		72BE50C721676F9300B7AF85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50C821676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift */,
+				72BE50CA2167762900B7AF85 /* UIButton+Label.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		72CE15DA21674CD800184F3B /* ClockworkRouter */ = {
 			isa = PBXGroup;
 			children = (
+				72BE50B5216750A600B7AF85 /* Router.swift */,
 				72CE15F621674CF100184F3B /* Assets */,
 			);
 			path = ClockworkRouter;
@@ -190,9 +254,14 @@
 		72F47912216746BF0083EDBE /* ClockworkRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				72BE50C721676F9300B7AF85 /* Helpers */,
 				72F47935216747FF0083EDBE /* App Delegate */,
 				72F47933216747690083EDBE /* Assets */,
-				72F47936216748110083EDBE /* Main */,
+				72BE50BF216768C500B7AF85 /* Base */,
+				72BE50C221676C2A00B7AF85 /* Login */,
+				72BE50B9216763B300B7AF85 /* Main */,
+				72BE50BC2167644800B7AF85 /* Settings */,
+				72F47936216748110083EDBE /* Home */,
 			);
 			path = ClockworkRouterDemo;
 			sourceTree = "<group>";
@@ -215,12 +284,13 @@
 			path = "App Delegate";
 			sourceTree = "<group>";
 		};
-		72F47936216748110083EDBE /* Main */ = {
+		72F47936216748110083EDBE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				72F47915216746BF0083EDBE /* MainViewController.swift */,
+				72F47915216746BF0083EDBE /* HomeViewController.swift */,
+				72BE50B721675C8B00B7AF85 /* HomeRouter.swift */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,13 +353,13 @@
 				72F4790C216746BF0083EDBE /* Sources */,
 				72F4790D216746BF0083EDBE /* Frameworks */,
 				72F4790E216746BF0083EDBE /* Resources */,
-				72F47957216749880083EDBE /* Embed Frameworks */,
+				72BE50D6216783A300B7AF85 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				72CE160121674DC300184F3B /* PBXTargetDependency */,
-				72CE15ED21674CD800184F3B /* PBXTargetDependency */,
+				72BE50D5216783A200B7AF85 /* PBXTargetDependency */,
 			);
 			name = ClockworkRouterDemo;
 			productName = ClockworkRouter;
@@ -308,6 +378,7 @@
 				TargetAttributes = {
 					72CE15D821674CD800184F3B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					72CE15E021674CD800184F3B = {
 						CreatedOnToolsVersion = 10.0;
@@ -393,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BE50D12167839700B7AF85 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,14 +480,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F47916216746BF0083EDBE /* MainViewController.swift in Sources */,
+				72F47916216746BF0083EDBE /* HomeViewController.swift in Sources */,
+				72BE50C12167699900B7AF85 /* BaseRouter.swift in Sources */,
+				72BE50CD2167796200B7AF85 /* SettingsViewController.swift in Sources */,
+				72BE50C921676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift in Sources */,
+				72BE50B821675C8B00B7AF85 /* HomeRouter.swift in Sources */,
 				72F47914216746BF0083EDBE /* AppDelegate.swift in Sources */,
+				72BE50C621676C8200B7AF85 /* LoginViewController.swift in Sources */,
+				72BE50CB2167762900B7AF85 /* UIButton+Label.swift in Sources */,
+				72BE50BB216763C400B7AF85 /* MainRouter.swift in Sources */,
+				72BE50C421676C4A00B7AF85 /* LoginRouter.swift in Sources */,
+				72BE50BE2167645800B7AF85 /* SettingsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		72BE50D5216783A200B7AF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72CE15D821674CD800184F3B /* ClockworkRouter */;
+			targetProxy = 72BE50D4216783A200B7AF85 /* PBXContainerItemProxy */;
+		};
 		72CE15E421674CD800184F3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72CE15D821674CD800184F3B /* ClockworkRouter */;
@@ -425,11 +511,6 @@
 			isa = PBXTargetDependency;
 			target = 72F4790F216746BF0083EDBE /* ClockworkRouterDemo */;
 			targetProxy = 72CE15E521674CD800184F3B /* PBXContainerItemProxy */;
-		};
-		72CE15ED21674CD800184F3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72CE15D821674CD800184F3B /* ClockworkRouter */;
-			targetProxy = 72CE15EC21674CD800184F3B /* PBXContainerItemProxy */;
 		};
 		72CE15FD21674DB600184F3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -463,6 +544,7 @@
 		72CE15F121674CD800184F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -481,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atelierclockwork.ClockworkRouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -491,6 +574,7 @@
 		72CE15F221674CD800184F3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -693,6 +777,7 @@
 		72F4792E216746C00083EDBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NQ6VJNLCQ;
@@ -711,6 +796,7 @@
 		72F4792F216746C00083EDBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NQ6VJNLCQ;
