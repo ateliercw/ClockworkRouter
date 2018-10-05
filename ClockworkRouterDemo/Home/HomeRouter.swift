@@ -2,11 +2,11 @@ import UIKit
 import ClockworkRouter
 
 class HomeRouter: UINavigationController, Router {
-    enum Target: GrandChildDestination {
+    enum Target: Destination {
         typealias Container = HomeRouter
         case home
 
-        static let presentFrom = MainRouter.Target.home
+        static let presentFrom: MainRouter.Target? = .home
     }
 
     init() {

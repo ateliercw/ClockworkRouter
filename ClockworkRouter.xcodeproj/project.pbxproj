@@ -33,6 +33,8 @@
 		72BE50D12167839700B7AF85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50B5216750A600B7AF85 /* Router.swift */; };
 		72BE50D2216783A200B7AF85 /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
 		72BE50D3216783A200B7AF85 /* ClockworkRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72BE50D82167894F00B7AF85 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50D72167894F00B7AF85 /* Destination.swift */; };
+		72BE50DA2167896D00B7AF85 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50D92167896D00B7AF85 /* EmptyRouter.swift */; };
 		72CE15E221674CD800184F3B /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
 		72CE15E921674CD800184F3B /* ClockworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE15E821674CD800184F3B /* ClockworkRouterTests.swift */; };
 		72CE15EB21674CD800184F3B /* ClockworkRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CE15DB21674CD800184F3B /* ClockworkRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,6 +114,8 @@
 		72BE50C821676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncapsulatingLayoutContainer.swift; sourceTree = "<group>"; };
 		72BE50CA2167762900B7AF85 /* UIButton+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Label.swift"; sourceTree = "<group>"; };
 		72BE50CC2167796200B7AF85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		72BE50D72167894F00B7AF85 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		72BE50D92167896D00B7AF85 /* EmptyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
 		72CE15D921674CD800184F3B /* ClockworkRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClockworkRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CE15DB21674CD800184F3B /* ClockworkRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockworkRouter.h; sourceTree = "<group>"; };
 		72CE15DC21674CD800184F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				72BE50B5216750A600B7AF85 /* Router.swift */,
+				72BE50D72167894F00B7AF85 /* Destination.swift */,
 				72CE15F621674CF100184F3B /* Assets */,
+				72BE50D92167896D00B7AF85 /* EmptyRouter.swift */,
 			);
 			path = ClockworkRouter;
 			sourceTree = "<group>";
@@ -464,6 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BE50D82167894F00B7AF85 /* Destination.swift in Sources */,
+				72BE50DA2167896D00B7AF85 /* EmptyRouter.swift in Sources */,
 				72BE50D12167839700B7AF85 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

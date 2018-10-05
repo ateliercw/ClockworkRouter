@@ -1,19 +1,5 @@
 import UIKit
 
-public protocol Destination {
-    associatedtype Container: Router where Container.Target == Self
-}
-
-public protocol ChildDestination: Destination {
-    associatedtype Presenter: Destination
-    static var presentFrom: Presenter { get }
-}
-
-public protocol GrandChildDestination: Destination {
-    associatedtype Presenter: ChildDestination
-    static var presentFrom: Presenter { get }
-}
-
 public protocol Router: AnyObject {
     associatedtype Target: Destination where Target.Container == Self
     func navigate(to destination: Target, animated: Bool, completion: ((UIResponder) -> Void)?)
@@ -23,27 +9,13 @@ public extension UIResponder {
     public func route<Target: Destination>(to destination: Target,
                                            animated: Bool = true,
                                            completion: ((UIResponder) -> Void)? = nil) {
+        if !performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion),
+            let destination = Target.presentFrom {
+            route(to: destination, animated: animated) { newResponder in
+                newResponder.route(to: destination, animated: animated, completion: completion)
+            }
+        }
         _ = performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion)
-    }
-
-    public func route<Target: ChildDestination>(to destination: Target,
-                                                animated: Bool = true,
-                                                completion: ((UIResponder) -> Void)? = nil) {
-        if !performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion) {
-            route(to: Target.presentFrom, animated: animated) { newResponder in
-                newResponder.route(to: destination, animated: animated, completion: completion)
-            }
-        }
-    }
-
-    public func route<Target: GrandChildDestination>(to destination: Target,
-                                                     animated: Bool = true,
-                                                     completion: ((UIResponder) -> Void)? = nil) {
-        if !performRoute(using: Target.Container.self, to: destination, animated: animated, completion: completion) {
-            route(to: Target.presentFrom, animated: animated) { newResponder in
-                newResponder.route(to: destination, animated: animated, completion: completion)
-            }
-        }
     }
 
     private func performRoute<RouteHandler: Router>(using router: RouteHandler.Type,
