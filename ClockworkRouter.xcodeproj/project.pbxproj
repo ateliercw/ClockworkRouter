@@ -35,6 +35,9 @@
 		72BE50D3216783A200B7AF85 /* ClockworkRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72BE50D82167894F00B7AF85 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50D72167894F00B7AF85 /* Destination.swift */; };
 		72BE50DA2167896D00B7AF85 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50D92167896D00B7AF85 /* EmptyRouter.swift */; };
+		72BE50DE2167A54E00B7AF85 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50DD2167A54E00B7AF85 /* OneViewController.swift */; };
+		72BE50E12167A55F00B7AF85 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50E02167A55F00B7AF85 /* TwoViewController.swift */; };
+		72BE50E32167A56D00B7AF85 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE50E22167A56D00B7AF85 /* ThreeViewController.swift */; };
 		72CE15E221674CD800184F3B /* ClockworkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CE15D921674CD800184F3B /* ClockworkRouter.framework */; };
 		72CE15E921674CD800184F3B /* ClockworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE15E821674CD800184F3B /* ClockworkRouterTests.swift */; };
 		72CE15EB21674CD800184F3B /* ClockworkRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CE15DB21674CD800184F3B /* ClockworkRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -116,6 +119,9 @@
 		72BE50CC2167796200B7AF85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		72BE50D72167894F00B7AF85 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		72BE50D92167896D00B7AF85 /* EmptyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
+		72BE50DD2167A54E00B7AF85 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		72BE50E02167A55F00B7AF85 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		72BE50E22167A56D00B7AF85 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		72CE15D921674CD800184F3B /* ClockworkRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClockworkRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CE15DB21674CD800184F3B /* ClockworkRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockworkRouter.h; sourceTree = "<group>"; };
 		72CE15DC21674CD800184F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		72BE50BC2167644800B7AF85 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				72BE50DF2167A55200B7AF85 /* SubViews */,
 				72BE50BD2167645800B7AF85 /* SettingsRouter.swift */,
 				72BE50CC2167796200B7AF85 /* SettingsViewController.swift */,
 			);
@@ -198,6 +205,16 @@
 				72BE50CA2167762900B7AF85 /* UIButton+Label.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72BE50DF2167A55200B7AF85 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				72BE50DD2167A54E00B7AF85 /* OneViewController.swift */,
+				72BE50E02167A55F00B7AF85 /* TwoViewController.swift */,
+				72BE50E22167A56D00B7AF85 /* ThreeViewController.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		72CE15DA21674CD800184F3B /* ClockworkRouter */ = {
@@ -491,13 +508,16 @@
 				72F47916216746BF0083EDBE /* HomeViewController.swift in Sources */,
 				72BE50C12167699900B7AF85 /* BaseRouter.swift in Sources */,
 				72BE50CD2167796200B7AF85 /* SettingsViewController.swift in Sources */,
+				72BE50DE2167A54E00B7AF85 /* OneViewController.swift in Sources */,
 				72BE50C921676F9F00B7AF85 /* EncapsulatingLayoutContainer.swift in Sources */,
 				72BE50B821675C8B00B7AF85 /* HomeRouter.swift in Sources */,
 				72F47914216746BF0083EDBE /* AppDelegate.swift in Sources */,
+				72BE50E32167A56D00B7AF85 /* ThreeViewController.swift in Sources */,
 				72BE50C621676C8200B7AF85 /* LoginViewController.swift in Sources */,
 				72BE50CB2167762900B7AF85 /* UIButton+Label.swift in Sources */,
 				72BE50BB216763C400B7AF85 /* MainRouter.swift in Sources */,
 				72BE50C421676C4A00B7AF85 /* LoginRouter.swift in Sources */,
+				72BE50E12167A55F00B7AF85 /* TwoViewController.swift in Sources */,
 				72BE50BE2167645800B7AF85 /* SettingsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
