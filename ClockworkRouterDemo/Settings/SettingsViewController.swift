@@ -3,7 +3,7 @@ import ClockworkRouter
 
 class SettingsViewController: UITableViewController {
     init() {
-        super.init(style: .plain)
+        super.init(style: .grouped)
         self.title = "Settings"
     }
 
@@ -28,6 +28,9 @@ class SettingsViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "settings") else { fatalError() }
         let label: String
         switch self.sections[indexPath.section][indexPath.row] {
+        case .one: label = "One"
+        case .two: label = "Two"
+        case .three: label = "Three"
         case .logout: label = "Log out"
         }
         cell.textLabel?.text = label
@@ -36,14 +39,23 @@ class SettingsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch self.sections[indexPath.section][indexPath.row] {
+        case .one: route(to: SettingsRouter.Target.one)
+        case .two: route(to: SettingsRouter.Target.two)
+        case .three: route(to: SettingsRouter.Target.three)
         case .logout: route(to: BaseRouter.Target.login)
         }
     }
 
-    private let sections: [[Row]] = [[
-        .logout
-        ]]
-    private enum Row {
+    private let sections: [[Row]] = [
+        [.one, .two, .three],
+        [.logout]]
+}
+
+private extension SettingsViewController {
+    enum Row {
+        case one
+        case two
+        case three
         case logout
     }
 }
