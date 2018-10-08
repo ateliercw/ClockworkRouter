@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72CE15D821674CD800184F3B"
-               BuildableName = "ClockworkRouter.framework"
-               BlueprintName = "ClockworkRouter"
+               BlueprintIdentifier = "72F4790F216746BF0083EDBE"
+               BuildableName = "ClockworkRouterDemo.app"
+               BlueprintName = "ClockworkRouterDemo"
                ReferencedContainer = "container:ClockworkRouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "72CE15E021674CD800184F3B"
+               BuildableName = "ClockworkRouterTests.xctest"
+               BlueprintName = "ClockworkRouterTests"
+               ReferencedContainer = "container:ClockworkRouter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "72F4790F216746BF0083EDBE"
+            BuildableName = "ClockworkRouterDemo.app"
+            BlueprintName = "ClockworkRouterDemo"
+            ReferencedContainer = "container:ClockworkRouter.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72CE15D821674CD800184F3B"
-            BuildableName = "ClockworkRouter.framework"
-            BlueprintName = "ClockworkRouter"
+            BlueprintIdentifier = "72F4790F216746BF0083EDBE"
+            BuildableName = "ClockworkRouterDemo.app"
+            BlueprintName = "ClockworkRouterDemo"
             ReferencedContainer = "container:ClockworkRouter.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72CE15D821674CD800184F3B"
-            BuildableName = "ClockworkRouter.framework"
-            BlueprintName = "ClockworkRouter"
+            BlueprintIdentifier = "72F4790F216746BF0083EDBE"
+            BuildableName = "ClockworkRouterDemo.app"
+            BlueprintName = "ClockworkRouterDemo"
             ReferencedContainer = "container:ClockworkRouter.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
