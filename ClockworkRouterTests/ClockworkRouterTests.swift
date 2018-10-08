@@ -7,6 +7,7 @@ class ClockworkRouterTests: XCTestCase {
     }
 
     override func tearDown() {
+        XCTAssert(false, "Fail tests on purpose")
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
